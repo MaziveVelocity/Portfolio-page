@@ -1,0 +1,120 @@
+:root{
+    --background: #f7fff7;
+    --primary: #494947;
+    --secondary: #7392b7;
+    --font: #090446;
+    --highlight: #040566;
+}
+
+* {
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+body{
+    background-color: var(--background);
+}
+
+a {
+   text-decoration: none;
+   color: var(--background);
+}
+
+/*-----Header----*/
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+header nav {
+    width: 750px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div h1{
+    margin: 0 30px;
+    color: var(--background);
+}
+
+header div{
+    margin: 0 30px;
+}
+
+/*-----Hero section----*/
+#hero{
+    display: flex;
+    align-items: center;
+}
+
+#hero #title-con{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+#hero #summary-con{
+    width: 30%;
+    
+}
+
+#hero #title-con img {
+    align-items: flex-start;
+}
+
+/*----Link section----*/
+#first-link-con{
+    background-color: var(--secondary);
+    height: 500px;
+}
+
+#link-con{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--secondary);
+    justify-content: space-around;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#first-link{
+    text-align: center;
+}
+
+#link-con #first-link {
+    width: 500px;
+    background-color: var(--primary);
+}
+/*----Contact section----*/
+#contact-info{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: var(--primary);
+    padding: 15px 0;
+}
+
+#contact-info h4 {
+    margin: 0 auto;
+}
+
+
+/*
+Media quieries
+*/
+@media screen and(max-width: 768px){
+
+}
+
+@media screen and(max-width: 480px){
+
+}
