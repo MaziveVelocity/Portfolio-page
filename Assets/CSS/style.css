@@ -10,6 +10,7 @@
     font-family: 'Prompt', sans-serif;
     letter-spacing: 0.08em;
     margin: 0;
+    padding: 0;
 }
 
 body{
@@ -28,6 +29,10 @@ header{
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--primary);
+}
+
+header h1{
+    text-align: center;
 }
 
 header nav {
@@ -53,57 +58,106 @@ header div{
 /*-----Hero section----*/
 #hero{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 
 #hero #title-con{
     display: flex;
     justify-content: space-between;
-    width: 100px;
+    flex-flow: row wrap;
+    margin: 30px 15px;
 }
 
-#hero #summary-con{
-    width: 30%;
-    
+#hero #title-con h3{
+    display: flex;
+    align-self: flex-end;
+    color: var(--font);
 }
 
 #hero #title-con img {
-    align-items: flex-start;
+    border: 3px solid var(--font);
+    border-radius: 180px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero #summary-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    width: 30%;
+    margin: 30px 30px;
+    padding: 0 50px;
+}
+
+#hero #summary-con #summary-title{
+    width: 200px;
+    margin: 0 15px;
+    border-bottom: 3px solid var(--font);
+    color: var(--font);
+}
+
+#hero #summary-con #summary p{
+    color: var(--font);
 }
 
 /*----Link section----*/
+.link a img{
+    border-radius: 15px;
+    border: 2px solid var(--font);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 10px;
+    max-width: 95%;
+    height: auto;
+}
+
 #first-link-con{
-    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
     height: 500px;
+    max-width: 100%;
+}
+
+#first-link-con #first-link{
+    text-align: center;
+}
+
+#first-link-con #first-link img{
+    
+    margin: 15px auto;
 }
 
 #link-con{
     display: flex;
     flex-flow: row wrap;
-    background-color: var(--secondary);
     justify-content: space-around;
-    height: 300px;
-    margin: 0 auto;
-}
-
-#first-link{
     text-align: center;
+    background-color: var(--primary);
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 15px;
 }
 
 #link-con #first-link {
     width: 500px;
     background-color: var(--primary);
 }
+
 /*----Contact section----*/
 #contact-info{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    background-color: var(--primary);
+    background-color: var(--background);
     padding: 15px 0;
 }
 
-#contact-info h4 {
+#contact-info h4 a {
+    color: var(--font);
     margin: 0 auto;
 }
 
@@ -112,9 +166,13 @@ header div{
 Media quieries
 */
 @media screen and(max-width: 768px){
-
+    * {
+        max-width: 768px;
+    }
 }
 
 @media screen and(max-width: 480px){
-
+    * {
+        max-width: 480px;
+    }
 }
