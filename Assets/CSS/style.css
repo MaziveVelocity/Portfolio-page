@@ -9,6 +9,7 @@
 * {
     font-family: 'Prompt', sans-serif;
     letter-spacing: 0.08em;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -131,7 +132,6 @@ header div{
 }
 
 #first-link-con #first-link img{
-    
     margin: 15px auto;
 }
 
@@ -180,37 +180,53 @@ header div{
 /*
 Media quieries
 */
-@media screen and(max-width: 968px){
-    header{
+@media screen and (max-width: 1225px){
+    header {
         flex-direction: column;
-        align-content: center;
-        background-color: var(--primary);
+        width: 100%;
     }
 
-    header{
-        flex-direction: column;
+    #hero {
         align-content: center;
+        flex-direction: column;
+        width: 100%;
     }
-
 
     #hero #title-con {
         flex-direction: column;
-        align-content: center;
-        width: 100%;
     }
 
     #hero #title-con #title {
-        align-content: center;
-        width: 100%;
+        align-self: center;
+    }
+
+    #hero #title-con #profile-pic {
+        align-self: center;
     }
 
     #hero #summary-con {
         width: 100%;
+        align-self: center;
     }
+
+    #hero #summary-con #summary {
+        align-self: center;
+    }
+    
 }
 
-@media screen and(max-width: 480px){
-    body {
-        max-width: 480px;
+@media screen and (max-width: 970px){
+    header {
+        flex-direction: row;
+        justify-content: center;
     }
+
+    header #page-title {
+        text-align: center;
+    }
+
+    #hero #summary-con {
+        align-self: center;
+    }
+
 }
