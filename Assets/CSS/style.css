@@ -1,9 +1,7 @@
 :root{
     --background: #f7fff7;
     --primary: #494947;
-    --secondary: #7392b7;
     --font: #090446;
-    --highlight: #040566;
 }
 
 * {
@@ -37,8 +35,8 @@ header nav {
 }
 
 header nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-around;
 }
 
@@ -111,8 +109,6 @@ header div{
 /*----Link section----*/
 .link a img{
     border-radius: 15px;
-    border: 5px solid var(--font);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 0 10px;
     max-width: 95%;
     height: auto;
