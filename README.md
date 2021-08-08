@@ -7,4 +7,4 @@ This page is for showing off my projects so others can view and check out my wor
 * HTML
 * CSS
 
-![Welcome to my portfolio](Assets/images/portfolioPage-screenshot.png)
+![Welcome to my portfolio](Assets/Images/portfolioPage-screenshot.png)
