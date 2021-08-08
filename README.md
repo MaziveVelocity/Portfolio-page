@@ -4,6 +4,7 @@ This page is for showing off my projects so others can view and check out my wor
 
 ## Languages
 
-*HTML
-*CSS
+* HTML
+* CSS
 
+![Welcome to my portfolio](Assets/images/portfolioPage-screenshot.png)
